@@ -1,1 +1,18 @@
-/etc/systemd/system/emacs.service
+
+[Unit]
+Description=Emacs: the extensible, self-documenting text editor
+
+[Service]
+WorkingDirectory=/home/genesthai
+User=genesthai
+Group=genesthai
+Type=forking
+ExecStart=/usr/bin/emacs --daemon
+ExecStop=/usr/bin/emacsclient -e "(kill-emacs)"
+Restart=always
+
+# Remove timeout, starting emacs can take a while
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

@@ -28,3 +28,4 @@
 ;; auth token
 ;; Alternatively (setq writefreely-auth-token "00000000-0000-0000-0000-000000000000")
   ;; :config (load-library "writefreely-auth-token.el.gpg"))
+(package! evil-tutor)

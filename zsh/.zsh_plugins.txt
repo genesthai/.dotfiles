@@ -1,0 +1,69 @@
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zdharma/fast-syntax-highlighting
+
+Valiev/almostontop
+andrewferrier/fzf-z
+urbainvaes/fzf-marks
+# sei40kr/zsh-fast-alias-tips
+gmatheu/shell-plugins explain-shell
+
+# The quick jump functionality is bound on ALT-e shortcut, but can be overridden by exporting FZF_FINDER_BINDKEY before sourcing
+leophys/zsh-plugin-fzf-finder
+#
+gko/ssh-connect
+wbingli/zsh-wakatime
+
+# https://github.com/jocelynmallon/zshmarks
+jocelynmallon/zshmarks
+MichaelAquilina/zsh-you-should-use
+# vim’s EasyMotion / Emacs’s ace-jump-mode for zsh.
+hchbaw/zce.zsh
+
+
+# THEME
+denysdovhan/spaceship-prompt
+
+Tarrasch/zsh-colors
+zpm-zsh/colors
+ael-code/zsh-colored-man-pages
+gretzky/auto-color-ls
+desyncr/auto-ls
+
+bartboy011/cd-reminder
+AlexisBRENON/oh-my-zsh-reminder
+
+zpm-zsh/clipboard
+zpm-zsh/tmux
+
+Tarrasch/zsh-command-not-found
+
+hlissner/zsh-autopair
+
+# The config files will be in ~/.config/znt.
+psprint/zsh-navigation-tools
+psprint/zsh-cmd-architect
+psprint/zsh-editing-workbench
+
+
+Cloudstek/zsh-plugin-appup
+wulfgarpro/history-sync
+
+bric3/nice-exit-code
+
+caarlos0/open-pr kind:path
+
+sindresorhus/pretty-time-zsh
+dbkaplun/smart-cd
+spwhitt/nix-zsh-completions
+
+
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/zsh-navigation-tools
+# robbyrussell/oh-my-zsh path:plugins/fasd
+robbyrussell/oh-my-zsh path:plugins/asdf
+robbyrussell/oh-my-zsh path:plugins/cargo
+robbyrussell/oh-my-zsh path:plugins/node
+# robbyrussell/oh-my-zsh path:plugins/zsh-better-npm-completion

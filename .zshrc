@@ -14,12 +14,13 @@ setopt autocd
  # use emacs keybindings even if our editor is set to vi
  # bindkey -e
 
-source ~/dotfiles/zsh/.oh-my-zsh.zsh
+# source ~/dotfiles/zsh/.oh-my-zsh.zsh
 source ~/dotfiles/zsh/.exports.zsh
 source ~/dotfiles/zsh/.aliases.zsh
 # source ~/dotfiles/zsh/.functions.zsh
 source ~/dotfiles/zsh/.env.zsh
-
+# ~/.zshrc
+source ~/.zsh_plugins.sh
 # for file in ~/dotfiles/zsh/{.*}; do
 #     [ -r "$file"] && [ -f "$file"] && source "$file";
 # done

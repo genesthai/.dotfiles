@@ -27,4 +27,30 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 if [ -e /home/genesthai/.nix-profile/etc/profile.d/nix.sh ]; then . /home/genesthai/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# https://www.dannyguo.com/blog/remap-caps-lock-to-escape-and-control/  ## -t 100
+xcape -e 'Control_L=Escape' 
+
+
+
+# Add snaps to PATH 
+PATH="/snap:$PATH"
+
+# Add linuxbrew ruby to path	
+PATH=/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:$PATH
+
+
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+# LINUXBREW
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+# There's binaries in here.
+PATH="/home/genesthai/.local/bin:$PATH"
+
+# Add Doom Emacs to PATH
+PATH="$HOME/.emacs.d/bin:$PATH"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
+if [ -f "$HOME/.nix-profile/bin/zsh" ] ; then
+    exec /usr/bin/zsh
+fi

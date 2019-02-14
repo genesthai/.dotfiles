@@ -7,7 +7,14 @@
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
-
+# 
+# source: https://askubuntu.com/questions/432255/what-is-the-display-environment-variable 
+# Export display for X server
+#   format: hostname:D.S where:
+#       hostname = the name of the computer where the X server runs
+#       D is a sequence number (usually 0). It can be varied if there are multiple displays connected to one computer
+#       S is the screen number. A display can actually have multiple screens.
+export DISPLAY=:0.0
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -50,6 +57,7 @@ PATH="/home/genesthai/.local/bin:$PATH"
 # Add Doom Emacs to PATH
 PATH="$HOME/.emacs.d/bin:$PATH"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
 
 if [ -f "$HOME/.nix-profile/bin/zsh" ] ; then
     exec /usr/bin/zsh

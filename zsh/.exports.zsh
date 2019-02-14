@@ -1,15 +1,10 @@
-
-# display linux binaries
-export DISPLAY=localhost:0.0
-
-
 #Change ls colours
 # LS_COLORS="ow=01;36;40" && export LS_COLORS
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+HISTFILE=~/.zsh_history
+# Keep 10000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/.zsh_history
 
 PROMPT_COMMAND='history -a'
 
